@@ -377,11 +377,11 @@
   ul, li { list-style: none; }
   @font-face {
     font-family: 'cambria';
-    src: url(./fonts/cambria.ttc);
+    src: url(../fonts/cambria.ttc);
   }
   @font-face {
     font-family: 'BASKVILL';
-    src: url(./fonts/BASKVILL.TTF);
+    src: url(../fonts/BASKVILL.TTF);
   }
   body {
     background-color: #ffcf2a;
