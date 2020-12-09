@@ -24,6 +24,19 @@
             return document.createElement(node);
         }
         window.Azong.createEl=createEl;
+          /**
+     * 获取 标签 对象（第一层）
+     * @param {strong} node 
+     */
+    function getChildren(parentNode){
+        return parentNode.children;  // 数组
+    }
+    window.Azong.getChildren = getChildren;
+    /* 获取标签对象 */
+    function getTagName(parentNode,target){
+        return parentNode.getElementsByTagName(target)
+    }
+    window.Azong.getTagName=getTagName;
     /**
      * 设置节点属性
      */
@@ -62,4 +75,9 @@ function removeEvent(domNode,eventType,handlerFunction){
     }
 }
 window.Azong.removeEvent=removeEvent;
+/* 添加子节点到父级的末尾 */
+function addChild(parentNode,node){
+    parentNode.appendChild(node)
+}
+window.Azong.addChild=addChild;
 })()
